@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Modern Task Management</title>
+    <meta name="description" content="A sleek, modern task tracker to boost your productivity with glassmorphism design and smooth animations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="app-container">
+        <header>
+            <h1>Task<span>Flow</span></h1>
+            <p class="subtitle">Organize your thoughts, one task at a time.</p>
+        </header>
+
+        <section class="input-section">
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="What needs to be done?" required autocomplete="off">
+                <button type="submit" id="add-task-btn" aria-label="Add task">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y1="19"></line><line x1="5" y1="12" x2="19" y1="12"></line></svg>
+                </button>
+            </form>
+        </section>
+
+        <section class="tasks-section">
+            <div class="stats-bar">
+                <span id="task-count">0 tasks remaining</span>
+                <button id="clear-completed" class="text-btn">Clear Completed</button>
+            </div>
+            <ul id="task-list">
+                <!-- Tasks will be rendered here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
